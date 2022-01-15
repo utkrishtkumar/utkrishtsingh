@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+
+body{
+    margin:0;
+}
+
+.mainheader{
+    display: inline-block;
+    width: 100%;
+    margin:0;
+    display: flex;
+    vertical-align: middle;
+    position:fixed;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(0, 140, 255), rgb(17, 0, 255));
+}
+
+
+.logoimg{
+background: url("../New folder/96751599-business-man-icon-white-icon-with-shadow-on-transparent-background.webp");
+height: fit-content;
+display: inline-block;
+}
+
+.logoimg img{
+    height: 100%;
+}
+.logo{
+    text-align: center;
+    padding: 10px ;
+    display: inline-block;
+}
+
+
+.navsection{
+    margin:0;
+    display: inline-block;
+    
+}
+
+.navlist{
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding:10px;
+    
+}
+
+.logotext{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bolder;
+    font-size: 2.3ch;
+    text-decoration: none;
+    vertical-align: middle;
+    color:#ffffff;
+    
+    
+}
+
+
+.navlink{
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.navaddress{
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color:#ffffff;
+    font-size: 1.5ch;
+    padding: 0 4ch;
+}
+
+.navaddress :hover{
+    color: black;
+}
+
+.content{
+    display: flex;
+    padding: 100px 20px 20px 20px;
+    flex-shrink: 0;
+    
+}
+
+.content > section{
+  
+}
+
+.left_panel{
+    flex-shrink: 0;
+    width: 25%;
+    padding: 0 20px;
+    justify-content: space-around;
+    display:flex;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.mainpanel{
+    display: flex;
+    padding: 0 20px;
+}
+
+
+
+
+
+.navfooter{
+    background: rgba(0, 0, 0, 0.685);
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    list-style: none;
+   
+    margin:0;
+    font-size: 1.2ch;
+    background-image: linear-gradient(rgb(0, 140, 255), rgb(17, 0, 255));
+}
+
+.navlistfooter{
+    list-style: none;
+    margin-top: 48px;
+    
+}
+.navlinkfooter{
+ 
+}
+.navaddressf{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
