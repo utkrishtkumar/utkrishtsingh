@@ -105,6 +105,16 @@ display: inline-block;
     border: 2px solid black;
 }
 
+.latestitems{
+    display: block;
+
+}
+
+.latestlist{
+    display: block;
+
+}
+
 .mainpanel{
     display: flex;
     padding: 0 20px;
