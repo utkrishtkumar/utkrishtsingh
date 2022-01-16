@@ -99,7 +99,7 @@ display: inline-block;
     width: 25%;
     padding: 0 20px;
     justify-content: space-around;
-    display:flex;
+    display:block;
     border-radius: 8px;
     border: 2px solid black;
 }
