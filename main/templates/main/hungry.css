@@ -95,10 +95,10 @@ display: inline-block;
 }
 
 .left_panel{
-    flex-shrink: 0;
+    
     width: 25%;
     padding: 0 20px;
-    justify-content: space-around;
+    
     display:block;
     border-radius: 8px;
     border: 2px solid black;
