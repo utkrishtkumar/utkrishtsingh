@@ -106,6 +106,7 @@ display: inline-block;
 
 .latestitems{
     display: block;
+    clear:both;
 
 }
 
