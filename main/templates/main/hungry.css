@@ -105,13 +105,18 @@ display: inline-block;
 }
 
 .latestitems{
-    display: block;
+    display: flex;
     clear:both;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .latestlist{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
