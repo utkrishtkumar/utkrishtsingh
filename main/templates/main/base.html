@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+ <script src="{% static 'shared.js' %}"></script>   
         <title>
             Ideate HomePage
         </title>
@@ -79,5 +80,7 @@
                     </ul>
                 </section>
             </div>
+
+{% block content %}{% endblock %}
     </body>
 </html>
