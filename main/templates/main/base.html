@@ -1,8 +1,7 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
- <script src="{% static 'shared.js' %}"></script>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             Ideate HomePage
         </title>
@@ -10,12 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" type="text/css" href="{% static 'hungry.css' %}">
+        <link rel="stylesheet" href="hungry.css">
     <body>
+      
+        <div class="backdrop"></div>
+
         <div class="mainheader">
+            <button class="togglebutton">
+                <span class="togglebutton__bar"></span>
+                <span class="togglebutton__bar"></span>
+                <span class="togglebutton__bar"></span>
+            </button>
+
             <section class="logo">
                 
-                <a href="main.html" class="logotext">iDeate</a></section><section class="navsection">
+                <a href="main.html" class="logotext">iDeate</a></section><section class="navsection"> 
+                    
+            </section>
+            <section>
                 <ul class="navlist">
                     <li class="navlink">
                         <a href="ideas.html" class="navaddress">Top Ideas</a>
@@ -32,6 +43,23 @@
                 </ul>
             </section>
         </div>
+        <nav class="mobilenav">
+            <ul class="mobilenav__items">
+                <li class="mobilenav__item">
+                    <a href="#top">Top Ideas</a>
+                </li>
+                <li class="mobilenav__item">
+                    <a href="#top">Answer Questions</a>
+                </li>
+                <li class="mobilenav__item">
+                    <a href="#top">Collaborate</a>
+                </li>
+                <li class="mobilenav__item">
+                    <a href="#top">Profile</a>
+                </li>
+
+            </ul>
+        </nav>
         <div class="content">
             <section class="left_panel">
                 <h1 class="latestitems">Latest </h1>
@@ -80,7 +108,6 @@
                     </ul>
                 </section>
             </div>
-
-{% block content %}{% endblock %}
+            <script src="shared.js"></script>
     </body>
 </html>

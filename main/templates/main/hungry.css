@@ -8,6 +8,36 @@ body{
     margin:0;
 }
 
+
+.backdrop{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top:0;
+    left:0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.349);
+}
+
+.togglebutton{
+    /* display: none; */
+    width: 3rem;
+    background: transparent;
+    cursor:pointer;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.togglebutton__bar{
+    width: 100%;
+    height:0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+}
 .mainheader{
     display: inline-block;
     width: 100%;
@@ -45,12 +75,13 @@ display: inline-block;
 }
 
 .navlist{
-    display: inline-block;
+    display: none;
     list-style: none;
     margin: 0;
     padding:10px;
     
 }
+
 
 .logotext{
     font-family: 'Space Grotesk', sans-serif;
@@ -63,6 +94,9 @@ display: inline-block;
     
 }
 
+.modal{
+    display: none;
+}
 
 .navlink{
     display: inline-block;
@@ -70,19 +104,48 @@ display: inline-block;
     vertical-align: middle;
 }
 
-.navaddress{
+.navaddress, .mobilenav__item a{
     text-decoration: none;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     color:#ffffff;
     font-size: 1.5ch;
     padding: 0 4ch;
+    word-wrap: break-word;
 }
 
 .navaddress :hover{
     color: black;
 }
 
+
+
+.mobilenav{
+    display: none; 
+    position: fixed;
+    z-index: 101;
+    width: 80%;
+    height:100vh;
+    top:0;
+    left:0;
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(0, 140, 255), rgb(17, 0, 255));
+}
+
+.mobilenav__items{
+    width:90%;
+    height:100%;
+    list-style:none;
+    margin: 10% auto;
+    padding:0;
+    text-align: center;
+    list-style: none;
+}
+
+.mobilenav__item{
+    margin: 1rem 0;
+
+}
 .content{
     display: flex;
     padding: 100px 20px 20px 20px;
@@ -98,8 +161,7 @@ display: inline-block;
     
     width: 25%;
     padding: 0 20px;
-    
-    display:block;
+    display:none;
     border-radius: 8px;
     border: 2px solid black;
 }
@@ -113,9 +175,7 @@ display: inline-block;
 }
 
 .latestlist{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding:0;
 
 
 }
@@ -155,4 +215,20 @@ display: inline-block;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
+}
+
+
+@media (min-width:  40rem) {
+    .left_panel{
+        display: block;
+    }
+
+    .navlist{
+        display: inline-block;
+    }
+
+    .togglebutton{
+        display: none;
+    }
+
 }
