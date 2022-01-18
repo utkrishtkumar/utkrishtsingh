@@ -147,7 +147,7 @@ display: inline-block;
 
 }
 .content{
-    display: none;
+    display: block;
     padding: 100px 20px 20px 20px;
     flex-shrink: 0;
     
