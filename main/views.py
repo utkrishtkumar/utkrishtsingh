@@ -43,7 +43,7 @@ def home(request):
         
     hexing = database.child('RRB').get().val()
    # fruit = database.child('Data').child('Name').get().val()
-    return render(request, "main/base.html", context)
+    return render(request, "main.html", context)
 
 
     
