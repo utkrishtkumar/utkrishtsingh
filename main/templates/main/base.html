@@ -1,3 +1,4 @@
+ {% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="hungry.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'hungry.css' %}">
     <body>
       
         <div class="backdrop"></div>
@@ -108,6 +109,6 @@
                     </ul>
                 </section>
             </div>
-            <script src="shared.js"></script>
+              <script src="{% static 'shared.js' %}"></script>   
     </body>
 </html>
