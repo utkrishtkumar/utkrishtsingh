@@ -20,7 +20,7 @@ authe = firebase.auth()
 database = firebase.database()
 
 # Create your views here.
-def home(request):
+def main(request):
     
     question1 = database.child('Question1').get().val()
     option1 = database.child('q1s1').get().val()
@@ -43,7 +43,7 @@ def home(request):
         
     hexing = database.child('RRB').get().val()
    # fruit = database.child('Data').child('Name').get().val()
-    return render(request, "base/main.html", context)
+    return render(request, "main.html", context)
 
 
     
