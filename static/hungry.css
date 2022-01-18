@@ -34,7 +34,7 @@ body{
 .togglebutton__bar{
     width: 100%;
     height:0.2rem;
-    background: black;
+    background: rgb(255, 255, 255);
     display: block;
     margin: 0.6rem 0;
 }
